@@ -1,0 +1,5 @@
+graph TD
+    A[Client] --> B(Load Balancer)
+    B --> C{API Gateway}
+    C --> D[Go Data API Microservice]
+    D --> E[Database]
