@@ -3,9 +3,6 @@
 [Português](README.pt-br.md) | [English](README.md)
 
 
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2671E5?style=for-the-badge&logo=githubactions&logoColor=white)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 <p align="center">
   <img src="./docs/hero_image.png" alt="Go Data API Microservice Hero Image">
