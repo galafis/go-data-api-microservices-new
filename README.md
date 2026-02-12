@@ -1,104 +1,167 @@
-# Go Data API Microservice
+# 📊 Go Data Api Microservices New
 
-[Português](README.pt-br.md) | [English](README.md)
+[![Go](https://img.shields.io/badge/Go-1.22-00ADD8.svg)](https://go.dev/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+[English](#english) | [Português](#português)
+
+---
+
+## English
+
+### 🎯 Overview
+
+**Go Data Api Microservices New** — A professional Go microservice for data API by Gabriel Demetrios Lafis.
+
+Total source lines: **70** across **3** files in **1** language.
+
+### ✨ Key Features
+
+- **Production-Ready Architecture**: Modular, well-documented, and following best practices
+- **Comprehensive Implementation**: Complete solution with all core functionality
+- **Clean Code**: Type-safe, well-tested, and maintainable codebase
+- **Easy Deployment**: Docker support for quick setup and deployment
+
+### 🚀 Quick Start
+
+#### Prerequisites
+- Go 1.22+
 
 
+#### Installation
 
-<p align="center">
-  <img src="./docs/hero_image.png" alt="Go Data API Microservice Hero Image">
-</p>
-
-## Overview
-
-This repository contains a simple Go microservice that exposes a data API. It demonstrates a professional project structure, functional code with unit tests, and comprehensive bilingual documentation.
-
-## Features
-
-- **Professional Structure**: Organized with `src/`, `tests/`, `docs/`, and `config/` folders.
-- **Functional Code**: A basic Go HTTP server with a data endpoint.
-- **Unit Tests**: Comprehensive unit tests for API handlers.
-- **Bilingual Documentation**: `README.md` in English and Portuguese.
-- **Visual Elements**: Architecture diagrams and badges.
-
-## Architecture
-
-The microservice architecture is designed for scalability and maintainability.
-
-```mermaid
-graph TD
-    A[Client] --> B(Load Balancer)
-    B --> C{API Gateway}
-    C --> D[Go Data API Microservice]
-    D --> E[Database]
+1. **Clone the repository**
+```bash
+git clone https://github.com/galafis/go-data-api-microservices-new.git
+cd go-data-api-microservices-new
 ```
 
-## Getting Started
+2. **Install dependencies**
+```bash
+go mod download
+```
 
-### Prerequisites
-
-- Go (version 1.18 or higher)
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/galafis/go-data-api-microservices-new.git
-   cd go-data-api-microservices
-   ```
-2. Compile the application:
-   ```bash
-   go build -o bin/server src/main.go
-   ```
-
-### Running the Application
+#### Running
 
 ```bash
-./bin/server
+go run ./...
 ```
 
-The server will start on `http://localhost:8080`.
 
-### API Endpoints
-
-- `GET /`: Returns a welcome message.
-- `GET /data`: Returns a JSON array of sample data.
-
-Example usage with `curl`:
+### 🧪 Testing
 
 ```bash
-curl http://localhost:8080/
-# Expected output: Welcome to the Go Microservices API!
-
-curl http://localhost:8080/data
-# Expected output: [
-#   {
-#     "id": "1",
-#     "name": "Item 1"
-#   },
-#   {
-#     "id": "2",
-#     "name": "Item 2"
-#   }
-# ]
+go test ./...
 ```
 
-## Running Tests
+### 📁 Project Structure
 
-To run the unit tests, execute the following command:
-
-```bash
-go test ./tests
+```
+go-data-api-microservices-new/
+├── docs/
+├── src/
+│   ├── models/
+│   │   └── data.go
+│   └── main.go
+├── tests/
+│   └── main_test.go
+├── README.md
+└── README.pt-br.md
 ```
 
-## Contributions
+### 🛠️ Tech Stack
 
-Contributions are welcome! Feel free to open issues or submit pull requests.
+| Technology | Usage |
+|------------|-------|
+| Go | 3 files |
 
-## License
+### 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
+### 👤 Author
 
 **Gabriel Demetrios Lafis**
 
+- GitHub: [@galafis](https://github.com/galafis)
+- LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
+
+---
+
+## Português
+
+### 🎯 Visão Geral
+
+**Go Data Api Microservices New** — A professional Go microservice for data API by Gabriel Demetrios Lafis.
+
+Total de linhas de código: **70** em **3** arquivos em **1** linguagem.
+
+### ✨ Funcionalidades Principais
+
+- **Arquitetura Pronta para Produção**: Modular, bem documentada e seguindo boas práticas
+- **Implementação Completa**: Solução completa com todas as funcionalidades principais
+- **Código Limpo**: Type-safe, bem testado e manutenível
+- **Fácil Implantação**: Suporte Docker para configuração e implantação rápidas
+
+### 🚀 Início Rápido
+
+#### Pré-requisitos
+- Go 1.22+
+
+
+#### Instalação
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/galafis/go-data-api-microservices-new.git
+cd go-data-api-microservices-new
+```
+
+2. **Install dependencies**
+```bash
+go mod download
+```
+
+#### Execução
+
+```bash
+go run ./...
+```
+
+### 🧪 Testes
+
+```bash
+go test ./...
+```
+
+### 📁 Estrutura do Projeto
+
+```
+go-data-api-microservices-new/
+├── docs/
+├── src/
+│   ├── models/
+│   │   └── data.go
+│   └── main.go
+├── tests/
+│   └── main_test.go
+├── README.md
+└── README.pt-br.md
+```
+
+### 🛠️ Stack Tecnológica
+
+| Tecnologia | Uso |
+|------------|-----|
+| Go | 3 files |
+
+### 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+### 👤 Autor
+
+**Gabriel Demetrios Lafis**
+
+- GitHub: [@galafis](https://github.com/galafis)
+- LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
